@@ -21,11 +21,11 @@ The standard Debian installation process for Xfce desktop includes additional pa
 
 ## ISO for Installing Debian
 
-    debian-12.15.0-amd64-netinst.iso [https://cdimage.debian.org/cdimage/archive/12.15.0/amd64/iso-cd/debian-12.15.0-amd64-netinst.iso]
+    [debian-12.15.0-amd64-netinst.iso][https://cdimage.debian.org/cdimage/archive/12.15.0/amd64/iso-cd/debian-12.15.0-amd64-netinst.iso]
 
-    Installing Debian 12 [https://www.debian.org/releases/bookworm/debian-installer/]
+    [Installing Debian 12][https://www.debian.org/releases/bookworm/debian-installer/]
 
-    Debian “bookworm” Release Information [https://www.debian.org/releases/bookworm/]
+    [Debian “bookworm” Release Information][https://www.debian.org/releases/bookworm/]
 
 
 Uncheck Debian **desktop environment** to install a minimal debian system.
