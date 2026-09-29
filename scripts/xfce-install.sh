@@ -26,7 +26,7 @@ apt install -y --no-install-recommends \
     xfdesktop4 \
     xfwm4 \
     adwaita-qt \
-    qt5ct fonts-quicksand fonts-jetbrains-mono fonts-hack fonts-cantarell paper-icon-theme papirus-icon-theme moka-icon-theme
+    qt5ct fonts-quicksand fonts-jetbrains-mono fonts-hack fonts-cantarell paper-icon-theme papirus-icon-theme moka-icon-theme greybird-gtk-theme featherpad
 
 echo 
 echo xfce install complete, please reboot and issue 'startx'
