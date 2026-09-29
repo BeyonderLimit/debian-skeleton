@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "debian-skeleton"
+version = "0.1.0"
+description = "TTY-first, post-install Debian configurator: probe, recommend, plan, apply."
+readme = "README.md"
+requires-python = ">=3.11"
+# Intentionally empty: the tool must run on a fresh Debian install before APT
+# repositories are trusted, so the runtime is stdlib-only.
+dependencies = []
+
+[project.scripts]
+debian-skeleton = "debian_skeleton.cli:main"
+
+[project.optional-dependencies]
+# rich powers the interactive wizard only; probe/recommend/plan/apply/verify
+# stay stdlib-only.  Debian 12 ships python3-rich 13.3.1, hence the floor.
+tui = ["rich>=13"]
+dev = ["pytest>=8", "rich>=13"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/debian_skeleton"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
